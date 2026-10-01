@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Digital Locker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="side-logo">
+            🔐 Digital Locker
+        </div>
+
+        <nav>
+
+            <a href="dashboard.html" class="active">
+                🏠 Dashboard
+            </a>
+
+            <a href="documents.html">
+                📁 My Documents
+            </a>
+
+            <a href="upload.html">
+                📤 Upload Document
+            </a>
+
+            <a href="#">
+                👤 Profile
+            </a>
+
+            <a href="#" id="logout">
+                🚪 Logout
+            </a>
+
+        </nav>
+
+    </aside>
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Top Bar -->
+
+        <header class="topbar">
+
+            <div>
+                <h2>Dashboard</h2>
+                <p>Manage your digital documents</p>
+            </div>
+
+            <div class="profile">
+
+                <div class="profile-icon">
+                    👤
+                </div>
+
+                <span id="userName">
+                    User
+                </span>
+
+            </div>
+
+        </header>
+
+
+        <!-- Welcome -->
+
+        <section class="welcome">
+
+            <h1>
+                Welcome, <span id="welcomeName">User</span> 👋
+            </h1>
+
+            <p>
+                Your documents are safely stored in your Digital Locker.
+            </p>
+
+        </section>
+
+
+        <!-- Statistics -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📁
+                </div>
+
+                <div>
+                    <h3 id="documentCount">0</h3>
+                    <p>Total Documents</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    📄
+                </div>
+
+                <div>
+                    <h3>0</h3>
+                    <p>PDF Documents</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🖼️
+                </div>
+
+                <div>
+                    <h3>0</h3>
+                    <p>Image Documents</p>
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon">
+                    🔒
+                </div>
+
+                <div>
+                    <h3>Secure</h3>
+                    <p>Storage Status</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Quick Actions -->
+
+        <section class="quick-section">
+
+            <h2>Quick Actions</h2>
+
+            <div class="quick-actions">
+
+                <a href="upload.html" class="action-card">
+
+                    <span>📤</span>
+
+                    <div>
+                        <h3>Upload Document</h3>
+                        <p>Add a new document</p>
+                    </div>
+
+                </a>
+
+
+                <a href="documents.html" class="action-card">
+
+                    <span>📁</span>
+
+                    <div>
+                        <h3>My Documents</h3>
+                        <p>View your documents</p>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Recent Documents -->
+
+        <section class="recent">
+
+            <div class="section-heading">
+
+                <h2>Recent Documents</h2>
+
+                <a href="documents.html">
+                    View All
+                </a>
+
+            </div>
+
+            <div id="recentDocuments">
+
+                <div class="empty-state">
+
+                    <div>📂</div>
+
+                    <h3>No Documents Yet</h3>
+
+                    <p>
+                        Upload your first document to get started.
+                    </p>
+
+                    <a href="upload.html">
+                        Upload Document
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
